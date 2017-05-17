@@ -1,0 +1,33 @@
+{
+  "name": "apiset-cli",
+  "version": "1.0.0",
+  "description": "The simple API scripting language.",
+  "bin": {
+    "apiset": "build/main/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "apiset",
+    "cli",
+    "apiset-cli",
+    "api"
+  ],
+  "author": "Cytren",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/commander": "^2.9.0",
+    "@types/node": "^7.0.14",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-json-editor": "^2.2.1",
+    "gulp-sequence": "^0.4.6",
+    "gulp-typescript": "^3.1.6",
+    "typescript": "^2.3.2"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "apiset": "^1.0.0"
+  }
+}
