@@ -25,7 +25,7 @@ gulp.task('build', ['clean:build'], function() {
 gulp.task('package:package.json', function() {
 
     gulp.src('package.json')
-        .pipe(json({  'bin': { 'apiset': 'index.js' } }))
+        .pipe(json({  'bin': { 'apiscript': 'index.js' } }))
         .pipe(gulp.dest('package'));
 });
 

@@ -1,17 +1,17 @@
 {
-  "name": "apiset-cli",
+  "name": "apiscript-cli",
   "version": "1.0.0",
   "description": "The simple API scripting language.",
   "bin": {
-    "apiset": "build/main/index.js"
+    "apiscript": "build/main/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "apiset",
+    "apiscript",
     "cli",
-    "apiset-cli",
+    "apiscript-cli",
     "api"
   ],
   "author": "Cytren",
@@ -28,6 +28,6 @@
   },
   "dependencies": {
     "commander": "^2.9.0",
-    "apiset": "^1.0.0"
+    "apiscript": "^1.0.0"
   }
 }
