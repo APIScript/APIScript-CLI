@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 
-import * as apiset from 'apiset';
+import * as apiscript from 'apiscript';
 import * as commander from 'commander';
 
 commander
@@ -11,8 +11,8 @@ commander
     .parse(process.argv);
 
 (function main() {
-    let config: apiset.Config = {};
-    config.apiset = commander;
+    let config: apiscript.Config = {};
+    config.apiscript = commander;
 
-    apiset.run(config);
+    apiscript.run(config);
 })();
