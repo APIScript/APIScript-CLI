@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 
-import * as apiscript from 'apiscript';
+import apiscript, {Config} from 'apiscript';
 import * as commander from 'commander';
 
 commander
@@ -10,9 +10,7 @@ commander
     .option("-l, --list", "List all available generators")
     .parse(process.argv);
 
-(function main() {
-    let config: apiscript.Config = {};
-    config.apiscript = commander;
+let config: Config = {};
+config.apiscript = commander;
 
-    apiscript.run(config);
-})();
+apiscript(config);
