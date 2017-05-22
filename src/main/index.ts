@@ -1,7 +1,9 @@
 #! /usr/bin/env node
 
-import apiscript, {Config} from 'apiscript';
+import * as apiscript from 'apiscript';
 import * as commander from 'commander';
+
+import {Config} from 'apiscript';
 
 commander
     .version("1.0.0")
@@ -13,4 +15,4 @@ commander
 let config: Config = {};
 config.apiscript = commander;
 
-apiscript(config);
+apiscript.run(config);
